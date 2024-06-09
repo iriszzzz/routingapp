@@ -7,6 +7,7 @@
 		<div class='links'>
 			<RouterLink active-class='active' to='/'>Home</RouterLink>
 			<RouterLink active-class='active' to='/about'>About</RouterLink>
+			<RouterLink active-class='active' to='/GA'>GA</RouterLink>
 		</div>
 		<RouterView />
 	</main>
