@@ -1,15 +1,3 @@
-<!-- <template>
-	<main class="container">
-        <h1>Genetic Algorithm</h1>
-		<p>This is the Genetic Algorithm Class page of the app, contact us if it does not work as normal.</p>
-	</main>
-</template>
-
-<style scoped>
-    p {
-        text-align: center;
-    }
-</style> -->
 <template>
     <div id="app">
       <head>
@@ -20,10 +8,12 @@
         <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/24/24170.png"/>
       </head>
       <body>
+        <h1>🩴🗺️👩‍🎓 Let's Travel around Taiwan 🎒🌏🛵</h1>
         <div id="map" style="height: 400px;"></div>
-  
+    
         <div class="card">
-          <h2 contenteditable> ⚠️ 環島須知 </h2>
+          <br>
+          <h2 contenteditable> &nbsp⚠️ 環島須知 </h2>
           <p contenteditable id="warn">
             &nbsp&nbsp&nbsp 1. 本路線僅供參考 🐸<br>
             &nbsp&nbsp&nbsp 2. 注意天氣變化 ☔<br>
@@ -169,22 +159,6 @@
           });
         });
   
-        // var routeCoordinates = locations.map(location => ({ lat: location.lat, lng: location.lng }));
-        // var route = new google.maps.Polyline({
-        //   path: routeCoordinates,
-        //   geodesic: true,
-        //   strokeColor: 'red',
-        //   strokeOpacity: 1.0,
-        //   strokeWeight: 1
-        // });
-        // route.setMap(map);
-  
-        // let directionsService = new google.maps.DirectionsService();
-        // let request = {
-        // //   origin: { lat: 25.0388994, lng: 121.5018781 },
-        // //   destination: { lat: 24.0388994, lng: 121.5018781 },
-        //   travelMode: 'WALKING'
-        // };
         directionsService.route(request, function(response, status) {
           if (status === 'OK') {
             let directionsDisplay = new google.maps.DirectionsRenderer({
@@ -199,41 +173,20 @@
   </script>
   
   <style scoped>
-    .container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-    body, html {
-      background-color: rgb(223, 249, 255);
-      margin: 0;
-    } 
     h1 {
+      margin-top: -25px;
       font-family: 'Noto Serif';
       color: rgb(17, 19, 139);
-      display: grid;
-      place-items: center;
+      text-align: center;
+      margin-bottom: 15px;
     } 
     #map {
-      height: 800px;
-      width: 1000px;
-      left: 100px;
-      background: #CCC;
+      height: 1100px;
+      width: 800px;
+      left: 150px;
     }
     ul {
       padding-top: 16px;
-    }
-    .media img {
-      max-width: 64px;
-    }
-    .media h5, p {
-      font-size: 14px;
-    }
-    .mdeia p {
-      margin-bottom: 6px;
-    }
-    .media h6 {
-      font-size: 12px;
-      color: #CCC;
     }
     .fixed-bottom {
       left: 16px;
@@ -241,12 +194,12 @@
       max-width: 320px;
     }
     .card {
-      font-size: 18px;
+      font-size: 12px;
       position: fixed;
-      top : 100px;
-      left: 1150px;
-      width: 200px;
-      height: 200px;
+      top : 150px;
+      left: 1000px;
+      width: 160px;
+      height: 160px;
       padding-inline: 12px;
       position: in-line;
       background: linear-gradient(-135deg, transparent 1rem, #ffeaa7 0);
@@ -254,7 +207,7 @@
       filter:drop-shadow(4px 4px 8px rgba(92, 92, 92, 0.3));
     }
     p {
-      font-size: 15px;
+      font-size: 12px;
     }
     .happy {
       margin-top: 80px;
@@ -265,9 +218,8 @@
       margin-bottom: 50px;
     }
     .copyright {
-      margin-top: -40px;
+      margin-top: 200px;
       margin-left: 500px;
-      margin-bottom: 30px;
       font-size: 15px;
       font-family: 'Noto Serif';
       color: rgb(17, 19, 139);
